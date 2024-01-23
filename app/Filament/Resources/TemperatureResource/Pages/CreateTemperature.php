@@ -10,6 +10,8 @@ class CreateTemperature extends CreateRecord
 {
     protected static string $resource = TemperatureResource::class;
 
+    protected static bool $canCreateAnother = false;
+
     protected function mutateFormDataBeforeCreate(array $data): array
     {
         $data['user_id'] = auth()->id();
