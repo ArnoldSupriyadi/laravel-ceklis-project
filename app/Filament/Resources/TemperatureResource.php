@@ -22,6 +22,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Auth;
 
 class TemperatureResource extends Resource
 {
@@ -143,5 +144,10 @@ class TemperatureResource extends Resource
             'create' => Pages\CreateTemperature::route('/create'),
             'edit' => Pages\EditTemperature::route('/{record}/edit'),
         ];
+    }
+
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()->where('user_id', Auth::user()->id);
     }
 }
