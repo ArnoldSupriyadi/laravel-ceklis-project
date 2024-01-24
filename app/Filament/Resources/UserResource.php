@@ -6,6 +6,7 @@ use App\Filament\Resources\UserResource\Pages;
 use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
 use Filament\Forms;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -24,7 +25,15 @@ class UserResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('name')
+                    ->autofocus()
+                    ->required(),
+                TextInput::make('email')
+                    ->required(),            
+                TextInput::make('password')
+                    ->password()
+                    ->revealable()
+                                
             ]);
     }
 
@@ -36,6 +45,7 @@ class UserResource extends Resource
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('email')
+                    ->sortable()
                     ->searchable(),
             ])
             ->filters([
