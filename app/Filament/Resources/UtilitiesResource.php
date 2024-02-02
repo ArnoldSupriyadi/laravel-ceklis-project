@@ -39,10 +39,8 @@ class UtilitiesResource extends Resource
                 TextInput::make('user')
                     ->autofocus()
                     ->required(),
-                TextInput::make('pic_pagi')
-                    ->required(),
-                TextInput::make('pic_malam')
-                    ->required(),
+                TextInput::make('pic_pagi'),
+                TextInput::make('pic_malam'),
                 Select::make('kesesuaian_tanggal')
                     ->options([
                         'sesuai' => 'Sesuai',
@@ -109,6 +107,15 @@ class UtilitiesResource extends Resource
                     ->sortable(),
                 TextColumn::make('jam_input_malam')
                     ->sortable(),
+                TextColumn::make('jam_input_malam')
+                    ->sortable(),
+                TextColumn::make('pagi')
+                    ->sortable(),
+                TextColumn::make('malam')
+                    ->sortable(),
+                TextColumn::make('pemakaian')
+                    ->sortable(),
+                TextColumn::make('keterangan')
             ])
             ->filters([
                 //
