@@ -2,9 +2,11 @@
 
 namespace App\Providers\Filament;
 
+use App\Models\User;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Filament\Navigation\MenuItem;
 use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
@@ -17,9 +19,17 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\Filament\Pages\Settings;
 
 class AdminPanelProvider extends PanelProvider
 {
+    protected function mutateFormDataBeforeCreate(array $data): array
+    {
+        $data['user_id'] = auth()->id();
+    
+        return $data;
+    }
+
     public function panel(Panel $panel): Panel
     {
         return $panel
@@ -28,6 +38,9 @@ class AdminPanelProvider extends PanelProvider
             ->path('/')
             ->registration()
             ->login()
+            ->userMenuItems([
+                MenuItem::make('user.id')
+            ])
             ->colors([
                 'primary' => Color::Lime,
             ])
