@@ -30,6 +30,10 @@ class Temperature extends Model
     protected $casts = [
         'kode_chiller' => 'json',
         'suhu_chiller' => 'json',
+        'kode_freezer' => 'json',
+        'suhu_freezer' => 'json',
+        'kode_fryer' => 'json',
+        'suhu_fryer' => 'json',
     ];
 
     public function user(): BelongsTo

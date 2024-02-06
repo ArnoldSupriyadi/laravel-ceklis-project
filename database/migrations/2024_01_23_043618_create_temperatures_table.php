@@ -19,11 +19,11 @@ return new class extends Migration
             $table->string('jam_input');
             $table->json('kode_chiller');
             $table->json('suhu_chiller');
-            $table->string('kode_freezer');
-            $table->string('suhu_freezer');
+            $table->json('kode_freezer');
+            $table->json('suhu_freezer');
             $table->string('kode_fryer');
             $table->string('suhu_fryer');
-            $table->longText('keterangan');
+            $table->longText('keterangan')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();

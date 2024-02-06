@@ -30,6 +30,8 @@ class TemperatureResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-eye-dropper';
 
+    protected static ?string $navigationGroup = 'Ceklist Harian';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -71,17 +73,29 @@ class TemperatureResource extends Resource
 
                 Section::make('Freezer')
                     ->description('Inputkan Kode dan Suhu Freezer')
-                    ->schema([                        
-                        TextInput::make('kode_freezer'),
-                        TextInput::make('suhu_freezer'),
-                    ])->columns(2),
+                    ->schema([      
+                        Repeater::make('kode_freezer')
+                        ->schema([
+                            TextInput::make('kode_freezer'),
+                        ]),
+                        Repeater::make('suhu_freezer')
+                        ->schema([
+                            TextInput::make('suhu_freezer'),
+                        ])                  
+                    ])->columns(),
 
                 Section::make('Fryer')
                     ->description('Inputkan Kode dan Suhu Fryer')
-                    ->schema([                        
-                        TextInput::make('kode_fryer'),
-                        TextInput::make('suhu_fryer'),
-                    ])->columns(2),
+                    ->schema([
+                        Repeater::make('kode_fryer')
+                        ->schema([
+                            TextInput::make('kode_fryer'),
+                        ]),
+                        Repeater::make('suhu_fryer')
+                        ->schema([
+                            TextInput::make('suhu_fryer'),
+                        ])                   
+                    ])->columns(),
                 
                 Section::make('Keterangan')
                     ->description('Inputkan Keterangan')

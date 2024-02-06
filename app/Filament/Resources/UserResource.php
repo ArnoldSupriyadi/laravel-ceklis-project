@@ -21,6 +21,8 @@ class UserResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
 
+    protected static ?string $navigationGroup = 'Settings';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -28,6 +30,7 @@ class UserResource extends Resource
                 TextInput::make('name')
                     ->autofocus()
                     ->required(),
+                TextInput::make('fullname'),
                 TextInput::make('email')
                     ->required(),            
                 TextInput::make('password')
@@ -42,6 +45,9 @@ class UserResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
+                    ->sortable()
+                    ->searchable(),
+                TextColumn::make('fullname')
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('email')

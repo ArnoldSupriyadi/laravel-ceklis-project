@@ -20,26 +20,20 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use App\Filament\Pages\Settings;
+use Filament\Pages\Auth\EditProfile;
 
 class AdminPanelProvider extends PanelProvider
 {
-    protected function mutateFormDataBeforeCreate(array $data): array
-    {
-        $data['user_id'] = auth()->id();
-    
-        return $data;
-    }
-
     public function panel(Panel $panel): Panel
     {
         return $panel
             ->default()
             ->id('admin')
             ->path('/')
-            ->registration()
             ->login()
+            ->favicon(asset('img/ceklist.png'))
             ->userMenuItems([
-                MenuItem::make('user.id')
+                
             ])
             ->colors([
                 'primary' => Color::Lime,
