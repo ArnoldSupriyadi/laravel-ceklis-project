@@ -27,7 +27,7 @@ class PersiapanBahanResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title');
+                TextInput::make('title')
             ]);
     }
 
