@@ -26,7 +26,7 @@ return new class extends Migration
             $table->unsignedBigInteger('pemakaian_gas')->nullable();
             $table->unsignedBigInteger('listrik_pagi')->nullable();
             $table->unsignedBigInteger('listrik_malam')->nullable();
-            $table->unsignedBigInteger('pemakaian_listirk')->nullable();
+            $table->unsignedBigInteger('pemakaian_listrik')->nullable();
             $table->text('keterangan')->nullable();
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

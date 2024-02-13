@@ -7,6 +7,7 @@ use App\Observers\UtilitesObserver;
 use App\Observers\UtilitiesObserver;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Utilities extends Model
 {
@@ -37,4 +38,9 @@ class Utilities extends Model
         'keterangan',
         'user_id'
     ];
+
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
 }

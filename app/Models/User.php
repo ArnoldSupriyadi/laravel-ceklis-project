@@ -50,4 +50,16 @@ class User extends Authenticatable
         return $this->hasMany(Temperature::class, 'user_id', 'id');
         //yang berelasi itu user_id dan yg unique itu id
     }
+
+
+    public function utilites(): HasMany
+    {
+        return $this->hasMany(Utilities::class, 'user_id', 'id');
+        //yang berelasi itu user_id dan yg unique itu id
+    }
+
+    public function persiapanBahan(): HasMany
+    {
+        return $this->hasMany(PersiapanBahan::class, 'user_id', 'id');
+    }
 }

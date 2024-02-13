@@ -18,6 +18,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Facades\Auth;
 
 class UtilitiesResource extends Resource
 {
@@ -97,29 +98,29 @@ class UtilitiesResource extends Resource
                             })                                          
                     ])
                     ->columns(3),
-                    // Section::make('Ceklist Listrik')
-                    // ->icon('heroicon-m-bolt')
-                    // ->schema([
-                    //     TextInput::make('listrik_pagi')
-                    //         ->numeric()
-                    //         ->minValue(1)
-                    //         ->maxValue(100),
-                    //     TextInput::make('listrik_malam')
-                    //         ->numeric()
-                    //         ->minValue(1)
-                    //         ->maxValue(100),
-                    //     Placeholder::make('pemakaian_listrik')
-                    //         ->content(function ($record){
-                    //             $sum = null;
+                    Section::make('Ceklist Listrik')
+                    ->icon('heroicon-m-bolt')
+                    ->schema([
+                        TextInput::make('listrik_pagi')
+                            ->numeric()
+                            ->minValue(1)
+                            ->maxValue(100),
+                        TextInput::make('listrik_malam')
+                            ->numeric()
+                            ->minValue(1)
+                            ->maxValue(100),
+                        Placeholder::make('pemakaian_listrik')
+                            ->content(function ($record){
+                                $sum = null;
 
-                    //             if (!empty($record->listrik_pagi) || !empty($record->listrik_malam)) {
-                    //                 $sum = ($record->listrik_pagi ?? 0) + ($record->listrik_malam ?? 0);
-                    //             }
+                                if (!empty($record->listrik_pagi) || !empty($record->listrik_malam)) {
+                                    $sum = ($record->listrik_pagi ?? 0) + ($record->listrik_malam ?? 0);
+                                }
 
-                    //             return $sum;
-                    //         })                           
-                    // ])
-                    // ->columns(3)
+                                return $sum;
+                            })                           
+                    ])
+                    ->columns(3)
             ]);
     }
 
@@ -180,5 +181,10 @@ class UtilitiesResource extends Resource
             'create' => Pages\CreateUtilities::route('/create'),
             'edit' => Pages\EditUtilities::route('/{record}/edit'),
         ];
+    }
+    
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()->where('user_id', Auth::user()->id);
     }
 }
