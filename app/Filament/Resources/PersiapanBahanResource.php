@@ -6,7 +6,9 @@ use App\Filament\Resources\PersiapanBahanResource\Pages;
 use App\Filament\Resources\PersiapanBahanResource\RelationManagers;
 use App\Models\PersiapanBahan;
 use Filament\Forms;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\TimePicker;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -27,7 +29,31 @@ class PersiapanBahanResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title')
+                TextInput::make('user')
+                    ->required(),
+                TextInput::make('nama_pic')
+                    ->required(),
+                Select::make('kesesuaian_tanggal')
+                    ->options([
+                        'sesuai' => 'Sesuai',
+                        'tidak_sesuai' => 'Tidak Sesuai',
+                    ]),
+                TimePicker::make('jam_input'),
+                Select::make('crispy_flour')
+                    ->options([
+                        'ya' => 'Ya',
+                        'tidak' => 'Tidak',
+                    ]),
+                TextInput::make('chicken_custom')
+                    ->numeric()
+                    ->minValue(1)
+                    ->maxValue(100),
+                Select::make('bumbu')
+                    ->label(('Bumbu (Ori, BBQ, Seaweed)'))
+                    ->options([
+                        'ya' => 'Ya',
+                        'tidak' => 'Tidak',
+                    ]),
             ]);
     }
 
