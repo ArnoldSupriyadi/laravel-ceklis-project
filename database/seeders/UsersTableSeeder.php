@@ -28,118 +28,781 @@ class UsersTableSeeder extends Seeder
             'password' => Hash::make('password'),
         ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'CRT',
-        //     'email' => 'crt.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'CRT',
+            'fullname' => 'Ciputra',
+            'email' => 'crt.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'JGC',
-        //     'email' => 'jgc.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'JGC',
+            'fullanme' => 'AEON',
+            'email' => 'jgc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'TPMS',
-        //     'email' => 'tpms.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'TPMS',
+            'fullname' => 'tpms',
+            'email' => 'tpms.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'TPMS',
-        //     'email' => 'tpms.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'MCS',
+            'fullname' => 'Mall Ciputra Semarang',
+            'email' => 'mcs.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'CMS',
-        //     'email' => 'mcs.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'BSM',
+            'fullname' => 'Botani Square Mall',
+            'email' => 'bsm.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'Botani',
-        //     'email' => 'bsm.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'AMB',
+            'fullname' => 'AEON Mall BSD',
+            'email' => 'amb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'AMB',
-        //     'email' => 'amb.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'GSM',
+            'fullname' => 'Green Sedayu Mall',
+            'email' => 'gsm.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'GSM',
-        //     'email' => 'gsm.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'TA',
+            'fullname' => 'taman anggrek',
+            'email' => 'ta.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'TA',
-        //     'email' => 'ta.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'LPJ',
+            'fullname' => 'Living Plaza Jababeka',
+            'email' => 'lpj.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'LPJ',
-        //     'email' => 'lpj.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'TSM',
+            'fullname' => 'Trans Studio Bali',
+            'email' => 'tsb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'TSM Bali',
-        //     'email' => 'tsb.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'LMB',
+            'fullname' => 'Lotte Mall Bintaro',
+            'email' => 'lmb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'LMB',
-        //     'email' => 'lmb.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'MCC',
+            'fullname' => 'Mall Ciputra Cibubur',
+            'email' => 'mcc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'MCC',
-        //     'email' => 'mcc.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
-
-        // DB::table('users')->insert([
-        //     'name' => 'RSC',
-        //     'email' => 'rsc.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
-
-        // DB::table('users')->insert([
-        //     'name' => 'PIM',
-        //     'email' => 'rsc.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'RSC',
+            'fullname' => 'Rumah Sakit Carolus',
+            'email' => 'rsc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
         
-        // DB::table('users')->insert([
-        //     'name' => 'PIM',
-        //     'email' => 'pim.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'PIM',
+            'fullname' => 'Pondok Indah Mall',
+            'email' => 'pim.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'TB',
-        //     'email' => 'tb.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'TB',
+            'fullname' => 'Transpark Bintaro',
+            'email' => 'tb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'GMC',
-        //     'email' => 'gmc.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'GMC',
+            'fullname' => 'Grage Mall Cirebon',
+            'email' => 'gmc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
 
-        // DB::table('users')->insert([
-        //     'name' => 'GMC',
-        //     'email' => 'gmc.shihlin@gmail.com',
-        //     'password' => Hash::make('password'),
-        // ]);
+        DB::table('users')->insert([
+            'name' => 'PVJ2',
+            'fullname' => 'Paris Van Java2',
+            'email' => 'pvj2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RLB',
+            'fullname' => 'Ruko Lebak Bulus',
+            'email' => 'rlb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RLB',
+            'fullname' => 'Ruko Lebak Bulus',
+            'email' => 'rlb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RLB',
+            'fullname' => 'Ruko Margonda Depok',
+            'email' => 'rlb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'BWB',
+            'fullname' => 'Beachwalk Bali',
+            'email' => 'bwb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'SDC',
+            'fullname' => 'SDC',
+            'email' => 'sdc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA57',
+            'fullname' => 'Rest Area KM 57',
+            'email' => 'sdc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA13',
+            'fullname' => 'Rest Area KM 13.5',
+            'email' => 'ra13.5.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'MMB',
+            'fullname' => 'Mall Metropolitan Bekasi',
+            'email' => 'mmb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'STM2',
+            'fullname' => 'Saint Moritz 2',
+            'email' => 'stm2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'SSC',
+            'fullname' => 'Season City',
+            'email' => 'ssc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'TK',
+            'fullname' => 'Teras Kota',
+            'email' => 'tk.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'CL2',
+            'fullname' => 'Citraland2',
+            'email' => 'cl2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'PV',
+            'fullname' => 'Pluit Village',
+            'email' => 'pv.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA19',
+            'fullname' => 'Rest Area KM19',
+            'email' => 'ra19.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'SM',
+            'fullname' => 'Sunter Mall',
+            'email' => 'sm.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'MDS',
+            'fullname' => 'Mangga Dua Square',
+            'email' => 'mds01.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'PSD',
+            'fullname' => 'Pesona Square Depok',
+            'email' => 'mds01.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'GGP',
+            'fullname' => 'Grand Galaxy Park',
+            'email' => 'ggp.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'DP Mall',
+            'fullname' => 'DP Mall Semarang',
+            'email' => 'dpms.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'DP Mall',
+            'fullname' => 'DP Mall Semarang',
+            'email' => 'dpms.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'MLB',
+            'fullname' => 'MRT Lebak Bulus',
+            'email' => 'mlb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'FT',
+            'fullname' => 'Foodtruck',
+            'email' => 'foodtruck.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'FT',
+            'fullname' => 'Foodtruck',
+            'email' => 'foodtruck.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'TSMC',
+            'fullname' => 'TSM Cibubur',
+            'email' => 'tsmc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'BMP',
+            'fullname' => 'Blok M Plaza',
+            'email' => 'bmp.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'IPB',
+            'fullname' => 'Istana Plaza Bandung',
+            'email' => 'ipb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'MOI',
+            'fullname' => 'Mall of indonesia',
+            'email' => 'moi.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'SC',
+            'fullname' => 'Senayan City',
+            'email' => 'sc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'MC',
+            'fullname' => 'Margo City',
+            'email' => 'mc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'LKJ',
+            'fullname' => 'Lippo Kramat Jati',
+            'email' => 'lkj.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'EP2',
+            'fullname' => 'Emporium Mall 2',
+            'email' => 'ep2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'EP2',
+            'fullname' => 'Emporium Mall 2',
+            'email' => 'ep2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'EP2',
+            'fullname' => 'Emporium Mall 2',
+            'email' => 'ep2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'CCM',
+            'fullname' => 'Cibinong City Mall',
+            'email' => 'ccm.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'SMB',
+            'fullname' => 'Sumarecon Mall Bekasi',
+            'email' => 'smb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'SMB',
+            'fullname' => 'Sumarecon Mall Bekasi',
+            'email' => 'smb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+        
+        DB::table('users')->insert([
+            'name' => 'MBH',
+            'fullname' => 'Mega Bekasi',
+            'email' => 'mbh.shilin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'MBH',
+            'fullname' => 'Mega Bekasi',
+            'email' => 'mbh.shilin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'CL1',
+            'fullname' => 'Citraland 2',
+            'email' => 'mbh.shilin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'GMS',
+            'fullname' => 'Grand Mall Surabaya',
+            'email' => 'gms.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'DM',
+            'fullname' => 'Daan Mogot',
+            'email' => 'dm.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'KV',
+            'fullname' => 'Kemang Village',
+            'email' => 'kv.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'MAS',
+            'fullname' => 'Mall Alam Sutera',
+            'email' => 'mas.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'GMB',
+            'fullname' => 'Grand Metropolitan Bekasi',
+            'email' => 'gmb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'GMB',
+            'fullname' => 'Grand Metropolitan Bekasi',
+            'email' => 'gmb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Tamini',
+            'fullname' => 'Tamini Square',
+            'email' => 'tams.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Paragon',
+            'fullname' => 'Paragon City',
+            'email' => 'pcs.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'TP',
+            'fullname' => 'Tunjungan Plaza',
+            'email' => 'tp.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'TSMB2',
+            'fullname' => 'Trans Studi Mall Bandung 2',
+            'email' => 'tsmb2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Gp',
+            'fullname' => 'Green Pramuka',
+            'email' => 'gp.shihlin1@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Gp',
+            'fullname' => 'Green Pramuka',
+            'email' => 'gp.shihlin1@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Pakuwon',
+            'fullname' => 'Pakuwon Mall Surabaya',
+            'email' => 'pakuwon.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'SMS1',
+            'fullname' => 'Summarecon Mall Serpong 1',
+            'email' => 'sms.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Bintaro',
+            'fullname' => 'Bintaro Plaza',
+            'email' => 'bintaro.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Bintaro',
+            'fullname' => 'Bintaro Plaza',
+            'email' => 'bintaro.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'PIK',
+            'fullname' => 'PIK Avenue',
+            'email' => 'pik.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'GI',
+            'fullname' => 'Grand Indonesia',
+            'email' => 'gi.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Bassura',
+            'fullname' => 'Bassura Mall',
+            'email' => 'bassura.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'HM',
+            'fullname' => 'Hartono Mall',
+            'email' => 'hartono.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'HM',
+            'fullname' => 'Hartono Mall',
+            'email' => 'hartono.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'KC',
+            'fullname' => 'Kalibata City',
+            'email' => 'kc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'KC',
+            'fullname' => 'Kalibata City',
+            'email' => 'kc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'PP',
+            'fullname' => 'Pasific Place',
+            'email' => 'pp.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'CSB',
+            'fullname' => 'Cirebon Super Block',
+            'email' => 'csb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'PVJ1',
+            'fullname' => 'Paris Van Java',
+            'email' => 'pvj.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Binus',
+            'fullname' => 'Binus Square',
+            'email' => 'binus.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Binus',
+            'fullname' => 'Binus Square',
+            'email' => 'binus.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'OBP',
+            'fullname' => 'One Bell Park',
+            'email' => 'obp.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'APY',
+            'fullname' => 'Ambarukmo Plaza',
+            'email' => 'apy.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Dfin',
+            'fullname' => 'Dufan Indoor',
+            'email' => 'fdfin.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+        
+        DB::table('users')->insert([
+            'name' => 'Dufan3',
+            'fullname' => 'Dufan 3',
+            'email' => 'dufan3.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Dufan2',
+            'fullname' => 'Dufan 2',
+            'email' => 'df2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Dufan1',
+            'fullname' => 'Dufan 1',
+            'email' => 'dufan.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'STM1',
+            'fullname' => 'Saint Moritz1',
+            'email' => 'stm.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'PJ',
+            'fullname' => 'Pluit Junction',
+            'email' => 'pj.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'EP1',
+            'fullname' => 'Emporium Mall 1',
+            'email' => 'shihlin.empo@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Lokasari',
+            'fullname' => 'Lokasari Square',
+            'email' => 'lokasari.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'BW',
+            'fullname' => 'Baywalk Mall',
+            'email' => 'bw.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'GC',
+            'fullname' => 'Gandaria City',
+            'email' => 'gandaria.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'CP',
+            'fullname' => 'Central Park',
+            'email' => 'cp.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'AMSC',
+            'fullname' => 'AEON Mall Sentul',
+            'email' => 'amsc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'MLC',
+            'fullname' => 'Mall Lippo Cikarang',
+            'email' => 'mlc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'TBB',
+            'fullname' => 'Transmart Buah Batu',
+            'email' => 'tbb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'P6',
+            'fullname' => 'Petak Enam',
+            'email' => 'p6.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'P6',
+            'fullname' => 'Petak Enam',
+            'email' => 'p6.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA21',
+            'fullname' => 'Rest Area KM21',
+            'email' => 'ra21.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'HIB',
+            'fullname' => 'Bazar Harapan Indah Shihlin',
+            'email' => 'hib.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'BCC',
+            'fullname' => 'The Breeze',
+            'email' => 'bcc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA72A',
+            'fullname' => 'Rest Area Km 72A',
+            'email' => 'ra72a.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA88B',
+            'fullname' => 'Rest Area Km 88B',
+            'email' => 'ra88b.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA6B',
+            'fullname' => 'Rest Area Km 6B',
+            'email' => 'ra6b.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Paskal',
+            'fullname' => 'Paskal 23 Bandung',
+            'email' => 'paskal.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Paskal',
+            'fullname' => 'Paskal 23 Bandung',
+            'email' => 'paskal.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Citos',
+            'fullname' => 'Paskal 23 Bandung',
+            'email' => 'paskal.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
     }
 }
