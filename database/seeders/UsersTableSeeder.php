@@ -792,16 +792,177 @@ class UsersTableSeeder extends Seeder
         ]);
 
         DB::table('users')->insert([
-            'name' => 'Paskal',
-            'fullname' => 'Paskal 23 Bandung',
-            'email' => 'paskal.shihlin@gmail.com',
+            'name' => 'Citos',
+            'fullname' => 'Cilandak Town Square',
+            'email' => 'citos.shihlin@gmail.com',
             'password' => Hash::make('password'),
         ]);
 
         DB::table('users')->insert([
-            'name' => 'Citos',
-            'fullname' => 'Paskal 23 Bandung',
-            'email' => 'paskal.shihlin@gmail.com',
+            'name' => 'Tangcity',
+            'fullname' => 'Tangerang City',
+            'email' => 'mtc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Cmc',
+            'fullname' => 'Cilegon Mall',
+            'email' => 'cmc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA97',
+            'fullname' => 'Rest Area km 97',
+            'email' => 'ra97.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA97',
+            'fullname' => 'Rest Area km 97',
+            'email' => 'ra97.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Amtb',
+            'fullname' => 'AEON Tanjung Barat',
+            'email' => 'amtb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'RA14',
+            'fullname' => 'Rest Area Km 14',
+            'email' => 'ra14.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Rps',
+            'fullname' => 'Royal Plaza Surabaya',
+            'email' => 'rps.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Lsa',
+            'fullname' => 'Lotte Shopping Avenue',
+            'email' => 'lsa.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Mbk',
+            'fullname' => 'Mall Boemi Kedaton',
+            'email' => 'mbk.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Tjb',
+            'fullname' => 'Transpark Juanda',
+            'email' => 'tj.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Fcb',
+            'fullname' => 'Festival Citilink Bandung',
+            'email' => 'fcb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Pcb',
+            'fullname' => 'Pentacity Balikpapan',
+            'email' => 'pcb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Bms',
+            'fullname' => 'Big Mall Samarinda',
+            'email' => 'bms.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Lwas',
+            'fullname' => 'Living World Alam Sutera',
+            'email' => 'lwas.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Cwb',
+            'fullname' => 'Cihampelas Walk',
+            'email' => 'cwb.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Lps',
+            'fullname' => 'Lippo Plaza Sidoarjo',
+            'email' => 'lps.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Rjr',
+            'fullname' => 'Ruko Joglo',
+            'email' => 'rjr.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Ppe',
+            'fullname' => 'Pantjoran PIK',
+            'email' => 'pik2.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Qa',
+            'fullname' => 'QA Departemen',
+            'email' => 'qa@tribinagroup.co.id',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Rc',
+            'fullname' => 'Ruko Cipondoh Shihlin',
+            'email' => 'rc.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Pmy',
+            'fullname' => 'Pakuwon Mall Jogja Shihlin',
+            'email' => 'pmy.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Pmy',
+            'fullname' => 'Pakuwon Mall Jogja Shihlin',
+            'email' => 'pmy.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Rgr',
+            'fullname' => 'Ruko Graha Raya Shihlin',
+            'email' => 'rgr.shihlin@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Rgr',
+            'fullname' => 'Ruko Graha Raya Shihlin',
+            'email' => 'rgr.shihlin@gmail.com',
             'password' => Hash::make('password'),
         ]);
     }
